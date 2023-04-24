@@ -20,56 +20,120 @@
             background-color:rgba(40, 23, 196, 0.897);
             color:white;
         }
+        nav ul{
+            list-style-type: none;
+            background: black;
+            padding: 10px;
+
+            
+        }
+        nav li{
+            display: inline;
+           
+        
+        }
+        nav li a{
+            text-decoration: none;
+            color:white;
+            padding: 10px 20px;
+
+        }
     </style>
 </head>
 <body>
-    <table title="Top 5 Highest Mountains in the World">
-        <caption>Data Source: Wikipedia</caption>
-        <tr>
-            <th>Rank</th>
-            <th>Name</th>
-            <th>Height (in meters)</th>
-            <th>Location</th>
-            <th>First Ascent</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Mount Everest</td>
-            <td>8848</td>
-            <td>Nepal/China</td>
-            <td>1953</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>K2</td>
-            <td>8611</td>
-            <td>Pakistan/China</td>
-            <td>1954</td>
-        </tr>
 
-        <tr>
-            <td>3</td>
-            <td>Kangchenjunga</td>
-            <td>8586</td>
-            <td>Nepal/China</td>
-            <td>1955</td>
-        </tr>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#table-of-content">Table of Content</a></li>
+                <li><a href="#top-5-hightest-mountings">Top 5 Highest Mountains in the World</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
 
-        <tr>
-            <td>4</td>
-            <td>Lhotse</td>
-            <td>8516</td>
-            <td>Nepal/China</td>
-            <td>1956</td>
-        </tr>
+        <!--Table of content -->
+        <section id="table-of-content">
+            <h2>Table of Content</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#table-of-content">Table of Content</a></li>
+                <li><a href="#top-5-hightest-mountings">Top 5 Highest Mountains in the World</a></li>
+                    <ol>
+                        <li type=""><a href="#mount-everest">Mount Everrest<a></li>
+                        <li type=""><a href="#k2">Mount K2<a></li>
+                        <li type=""><a href="#mount-kangchenjunga">Mount Kangchenjunga<a></li>
+                        <li type=""><a href="#mount-lhotse">Lhotse<a></li>
+                        <li type=""><a href="#mount-makalu">Mount Makalu<a></li>
 
-        <tr>
-            <td>5</td>
-            <td>Makalu</td>
-            <td>8416</td>
-            <td>Nepal/China</td>
-            <td>1955</td>
-        </tr>
-    </table>
+                    </ol>
+            </ul>
+
+        </section>
+
+        <!--Top 5 Mounting inthe World-->
+        <section id="top-5-hightest-mountings">
+            <h2>Top 5 Highest Mountains in the World</h2>
+            <table title="Top 5 Highest Mountains in the World">
+                <caption>Data Source: Wikipedia</caption>
+                <tr>
+                    <th>Rank</th>
+                    <th>Name</th>
+                    <th>Photo</th>
+                    <th>Height (in meters)</th>
+                    <th>Location</th>
+                    <th>First Ascent</th>
+                </tr>
+                <tr id="mount-everest">
+                    <td>1</td>
+                    <td>Mount Everest</td>
+                    <td><img width= "200px" src="./images/Mount-Everest.webp" alt="Photo of Mount Everest in Nepal/China" title="Mount Everest"></td>
+                    <td>8848</td>
+                    <td>Nepal/China</td>
+                    <td>1953</td>
+                </tr>
+                <tr id="#k2">
+                    <td>2</td>
+                    <td>K2</td>
+                    <td><img width= "200" src="./images/k2.jpeg" alt="Photo of Mount K2 in Parkistan" title="Mount K2 in Pakistan/China"></td>
+                    <td>8611</td>
+                    <td>Pakistan/China</td>
+                    <td>1954</td>
+                </tr>
+        
+                <tr id="#mount-kangchenjunga">
+                    <td>3</td>
+                    <td>Kangchenjunga</td>
+                    <td><img width= "200" src="./images/Mount-Kanchenjunga.jpeg" alt="Photo of Mount Kangchenjunga in nepal/china" title="Mount Kangchenjunga in Nepal/China"></td>
+                    <td>8586</td>
+                    <td>Nepal/India</td>
+                    <td>1955</td>
+                </tr>
+        
+                <tr id="#mount-lhotse">
+                    <td>4</td>
+                    <td>Lhotse</td>
+                    <td><img width= "200" src="./images/mount_lhotse_expedition_146787569278.jpeg" alt="Photo of Mount Lhotse in Neapal /China" title="Mount K2 in Lhotse in Nepal China"></td>
+                    <td>8516</td>
+                    <td>Nepal/China</td>
+                    <td>1956</td>
+                </tr>
+        
+                <tr id="#mount-makalu">
+                    <td>5</td>
+                    <td>Makalu</td>
+                    <td><img width= "200" src="./images/makalu-expedition-fix-departure.jpeg" alt="Photo of Mount Makalu in Parkistan" title="Mount Makalu in Pakistan/China"></td>
+                    <td>8416</td>
+                    <td>Nepal/China</td>
+                    <td>1955</td>
+                </tr>
+            </table>
+
+        </section>
+        
+
+    </main>
+    
 </body>
 </html>
